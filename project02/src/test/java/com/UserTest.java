@@ -54,9 +54,24 @@ public class UserTest {
                 "admin",
                 user.getPassword());
         System.out.println(user.getPassword());
-
-
     }
+
+    @Test
+    public void canSetPassword() {
+
+        User user = new User();
+
+        user.setPassword("hello");
+
+        assertEquals("We are changing password",
+                "hello",
+                user.getPassword());
+        System.out.println("New password is: " + user.getPassword());
+    }
+
 }
+
+
+
 
 

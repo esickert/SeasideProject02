@@ -7,20 +7,20 @@ package com.esickert.domainentities;
 public class User {  //a class
 //    private String username;
     private String username;
-//    private String password;
+
     private String password;
 
 
     public User()  {  // a constructor
         username = "username";
-        password = "password";
+        password = "admin";
     }  //end of constructor
 
 
-    public User(String username,String password)    {
+    public User(String username,String password)    {  //a Contructor
        this.username = username;
        this.password = password;
-    }
+    }  //end of constructor
 
     public String getUsername() {
         return username;
@@ -30,4 +30,8 @@ public class User {  //a class
         return password;
     }
 
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
 }  //end of class User
