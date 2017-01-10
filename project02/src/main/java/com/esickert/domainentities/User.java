@@ -7,7 +7,6 @@ package com.esickert.domainentities;
 public class User {  //a class
 //    private String username;
     private String username;
-
     private String password;
 
 
@@ -26,7 +25,7 @@ public class User {  //a class
         return username;
     }
 
-    public String getPassword() {
+    public String getPassword(){
         return password;
     }
 
