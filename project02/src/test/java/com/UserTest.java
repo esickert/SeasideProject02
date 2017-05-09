@@ -1,5 +1,6 @@
 package com;
 
+import com.esickert.domainentities.EmptyUser;
 import  com.esickert.domainentities.User;
 //import com.esickert.domainentities.User;
 import org.junit.Test;
@@ -67,6 +68,13 @@ public class UserTest {
                 "hello",
                 user.getPassword());
         System.out.println("New password is: " + user.getPassword());
+    }
+
+    @Test
+    public void emptyUserExampleTest()  {
+        EmptyUser me = new EmptyUser();
+        assertEquals("usernme", me.getUsername());
+        assertEquals("password", me.getPassword());
     }
 
 }
