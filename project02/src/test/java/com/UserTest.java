@@ -73,8 +73,8 @@ public class UserTest {
     @Test
     public void emptyUserExampleTest()  {
         EmptyUser me = new EmptyUser();
-        assertEquals("usernme", me.getUsername());
-        assertEquals("password", me.getPassword());
+        assertEquals("username", me.getUsername());
+        assertEquals("admin", me.getPassword());
     }
 
 }
