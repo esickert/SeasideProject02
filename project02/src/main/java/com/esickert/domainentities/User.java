@@ -34,7 +34,7 @@ public class User implements GetUrl {  //a class
     public void setPassword(String password) {
         System.out.println("Setting pasword...");
         try {
-            System.out.println("Inside 'try' ");
+            System.out.println("Inside 'try' This is NOT trhrowing the CoreBreachException!!!!");
 //            if (password.equals("s"))
                 throw new CoreBreachException("This is fucked up!!!!");
 //            else System.out.println("This is fucked up!!!");
