@@ -13,7 +13,7 @@ public class User implements GetUrl {  //a class
 
     public User()  {  // a constructor
         username = "username";
-        password = "admin";
+        password = "res";
         url = "10.1.1.1";
     }  //end of constructor
 
@@ -35,8 +35,13 @@ public class User implements GetUrl {  //a class
         System.out.println("Setting pasword...");
         try {
             System.out.println("Inside 'try' This is NOT throwing the CoreBreachException!!!!");
-            if (password.length() < 6)
+            System.out.println(password.length());
+            if (password.length() < 10) {
+//                throw new Exception();
+                System.out.println("Inside if statement");
                 throw new CoreBreachException("This is fucked up!!!!");
+
+            }
             else System.out.println("This is fucked up!!!");
 
 

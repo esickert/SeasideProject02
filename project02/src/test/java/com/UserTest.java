@@ -62,7 +62,7 @@ public class UserTest {
 
         User user = new User();
 
-        user.setPassword("s");
+        user.setPassword("res");
 
  //       assertEquals("We are changing password",
  //               "hello",
